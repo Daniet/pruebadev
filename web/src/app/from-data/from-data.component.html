@@ -1,0 +1,12 @@
+<div class="container content-page">
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12 m6 l4" *ngFor="let x of campFrom">
+          <input id="last_name" type="text" class="validate" value="{{ x['value'] }}">
+          <label for="last_name">{{ x['name'] }}</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container content-page">
+  <div class="row">
+    <table class="col s12 responsive-table striped">
+      <thead>
+        <tr>
+          <th class="center-align" *ngFor="let x of tableHead">
+            {{ x }}
+          </th>
+          <th class="center-align">
+            Editar
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let x of tableBody">
+          <td *ngFor="let y of x">
+            {{ y }}
+          </td>
+          <td class="right-align">
+            <a routerLink="/panel/{{ panel }}/{{ x[0] }}">
+              Editar
+            </a>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot id="t-foot-data">
+        <tr>
+          <td class="right-align">
+            <a href="#!">
+              Nuevo
+            </a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

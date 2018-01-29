@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Daniel Andres Pinto <dapinto7@misena.edu.co>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2"
+  }
+}
